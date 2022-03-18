@@ -5,52 +5,54 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
         <title>vera first calculator</title>
     </head>
     <body>
-        <div class="calculator">
+        <div class="calculator-grid">
             <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()" class="calculator-screen" value="30-20">
             <div class="calculator-keys">
-                <button type="button" class="operator" value="(">(</button>
-                <button type="button" class="operator" value=")">)</button>
-                <button type="button" class="operator" value="%">%</button>
-                <button type="button" class="operator" value="AC">AC</button>
+                <button  class="operator">(</button>
+                <button  class="operator" >)</button>
+                <button  class="operator">%</button>
+                <button  class="operator clear">AC</button>
 
-                <button type="button"  value="7">7</button>
-                <button type="button" value="8">8</button>
-                <button type="button" value="9">9</button>
-                <button type="button" class="operator" value="divide">/</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">/</button>
 
-                <button type="button" value="4">4</button>
-                <button type="button"  value="5">5</button>
-                <button type="button" value="6">6</button>
-                <button type="button" class="operator" value="multiply">*</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">*</button>
 
-                <button type="button"  value="1">1</button>
-                <button type="button" value="2">2</button>
-                <button type="button"  value="3">3</button>
-                <button type="button" class="operator" value="substract">-</button>
+                <button>1</button>
+                <button>2</button>
+                <button >3</button>
+                <button  class="operator">-</button>
 
-                <button type="button" value="0">0</button>
-                <button type="button" value=".">.</button>
-                <button type="button" class="equal" value="equal">=</button>
-                <button type="button" class="operator" value="add">+</button>
+                <button  value="0">0</button>
+                <button  value=".">.</button>
+                <button  class="equal">=</button>
+                <button  class="operator">+</button>
                 
             </div>
         </div>
     </body>
     <script>
-        //focus=changes background color of input to yellow
+        //focus=changes background background color of screen to lightpink
         function focusFunction(){
-            document.getElementById("myInput").style.background="lightpink";
+            document.getElementById("myInput").style.background="rgb(43, 42, 42)";
         }
 
-        //no focus = changes the background color of input to red
+        //no focus = background color of screen remains black
         function blurFunction(){
-            document.getElementById("myInput").style.background="hotpink";
+            document.getElementById("myInput").style.background="#181818";
         }
     </script>
 </html>
